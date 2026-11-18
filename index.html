@@ -1,29 +1,75 @@
-<!DOCTYPE html>
+HTML<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IdeaMX</title>
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: system-ui, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      background: #0f172a;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
       color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 700px;
       text-align: center;
     }
-    h1 { font-size: 3rem; margin: 0; }
-    p { font-size: 1.2rem; opacity: 0.8; }
+    h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #60a5fa, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .tagline {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      opacity: 0.9;
+    }
+    .description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      opacity: 0.8;
+      margin-bottom: 2.5rem;
+    }
+    .contact {
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      padding: 0.9rem 1.8rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .contact:hover {
+      background: #2563eb;
+    }
+    .footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      opacity: 0.5;
+    }
   </style>
 </head>
 <body>
-  <div>
+  <div class="container">
     <h1>IdeaMX</h1>
-    <p>Sitio en construcción</p>
+    <p class="tagline">Plataforma para dar forma a tus ideas</p>
+    <p class="description">
+      Convertimos ideas en proyectos reales. Desde herramientas internas hasta productos completos, 
+      todo bajo un mismo techo.
+    </p>
+    <a href="mailto:ideasmx@gmail.com" class="contact">Contáctanos</a>
+    <div class="footer">ideamx.dev</div>
   </div>
 </body>
 </html>
